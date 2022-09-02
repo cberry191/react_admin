@@ -19,7 +19,7 @@
 
     hr {
         height: 0;
-        border: 0.5px solid rgb(230, 227, 227);
+        border: 0.25px solid rgb(230, 227, 227);
     }
 
     .center {
@@ -67,6 +67,7 @@
     .bottom {
         display: flex;
         align-items: center;
+        justify-content: center;
         margin: 10px;
 
         .colorOption {
@@ -75,13 +76,16 @@
             border-radius: 5px;
             border: 1px solid #7451f8;
             cursor: pointer;
+            margin: 15px;
+        
+            &:nth-child(1){
+                background-color: whitesmoke;
+            }
+            &:nth-child(2){
+                background-color: #333;
+            }
         }
 
-        &:nth-child(1){
-            background-color: whitesmoke;
-        }
-        &:nth-child(2){
-            background-color: #333;
-        }
+        
     }
 }
